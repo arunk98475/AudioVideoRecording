@@ -640,7 +640,7 @@ void RecordVars::ScreenCapThread()
             av_pkt_out->duration = av_rescale_q(1, av_cntx_out->time_base, av_stream->time_base);
 
             av_frm_out->pts = pts;
-            av_frm_out->pkt_duration = av_rescale_q(1, av_cntx_out->time_base, av_stream->time_base);
+            av_frm_out->duration = av_rescale_q(1, av_cntx_out->time_base, av_stream->time_base);
             enc_packet_counter++;
 
 
